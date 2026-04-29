@@ -547,6 +547,53 @@
   font-size: 0.84rem;
 }
 
+.telegram-reminder {
+  margin: 10px auto 18px;
+  max-width: 480px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(34, 158, 217, 0.35);
+  background: rgba(34, 158, 217, 0.08);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.telegram-reminder:hover {
+  transform: translateY(-1px);
+  border-color: rgba(34, 158, 217, 0.55);
+  box-shadow: 0 10px 22px rgba(34, 158, 217, 0.18);
+}
+
+.telegram-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #229ed9;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.telegram-icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+.telegram-text {
+  display: grid;
+  gap: 4px;
+  color: #17689f;
+  text-align: left;
+}
+
+.telegram-text strong {
+  color: #0e5a8b;
+}
+
 .submit-status {
   margin: 0 0 16px;
   font-size: 0.9rem;
@@ -590,5 +637,9 @@
   .promo-code-row {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .telegram-reminder {
+    align-items: flex-start;
   }
 }

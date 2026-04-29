@@ -284,6 +284,28 @@ export const SurveyPage = () => {
     )
   }
 
+  const renderTelegramReminder = () => (
+    <a
+      className="telegram-reminder"
+      href="https://t.me/salomatai"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <span className="telegram-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img">
+          <path
+            fill="currentColor"
+            d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0Zm5.894 7.596-1.97 9.29c-.149.658-.538.82-1.09.51l-3.017-2.225-1.455 1.4c-.16.16-.295.295-.604.295l.216-3.06 5.57-5.032c.242-.216-.052-.336-.376-.12l-6.882 4.334-2.965-.925c-.644-.2-.658-.644.135-.955l11.593-4.47c.538-.196 1.008.12.845.958Z"
+          />
+        </svg>
+      </span>
+      <span className="telegram-text">
+        <span>{t.app.telegramReminder}</span>
+        <strong>{t.app.telegramButton}</strong>
+      </span>
+    </a>
+  )
+
   return (
     <main className="survey-page">
       <div className="survey-card">
@@ -332,6 +354,7 @@ export const SurveyPage = () => {
           <section className="final-state">
             <h2>{t.app.notRelevantTitle}</h2>
             <p>{t.app.notRelevantDescription}</p>
+            {renderTelegramReminder()}
             <button type="button" className="btn btn-primary" onClick={onRestart}>
               {t.app.restart}
             </button>
@@ -343,6 +366,7 @@ export const SurveyPage = () => {
             <h2>{t.app.completedTitle}</h2>
             <p>{t.app.endNoContact}</p>
             {renderPromoBlock()}
+            {renderTelegramReminder()}
             <button type="button" className="btn btn-primary" onClick={onRestart}>
               {t.app.restart}
             </button>
@@ -354,6 +378,7 @@ export const SurveyPage = () => {
             <h2>{t.app.completedTitle}</h2>
             <p>{t.app.thankYouNote}</p>
             {renderPromoBlock()}
+            {renderTelegramReminder()}
             <button type="button" className="btn btn-primary" onClick={onRestart}>
               {t.app.restart}
             </button>

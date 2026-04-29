@@ -44,6 +44,9 @@ export const translations = {
       promoLimit: 'Bir foydalanuvchi ushbu muddat ichida maksimal 3 ta promo-koddan foydalanishi mumkin.',
       copyPromo: 'Kodni nusxalash',
       copiedPromo: 'Nusxalandi',
+      telegramReminder:
+        'Yangiliklar va dastur ishga tushishini o‘tkazib yubormaslik uchun Telegram kanalimizga obuna bo‘ling.',
+      telegramButton: 'Kanalga obuna bo‘lish',
     },
     common: { yes: 'Ha', no: 'Yo‘q' },
     sections: {
@@ -217,6 +220,9 @@ export const translations = {
       promoLimit: 'Один пользователь может использовать максимум 3 промокода за этот период.',
       copyPromo: 'Скопировать код',
       copiedPromo: 'Скопировано',
+      telegramReminder:
+        'Чтобы не пропустить новости и запуск приложения, подпишитесь на наш Telegram-канал.',
+      telegramButton: 'Подписаться на канал',
     },
     common: { yes: 'Да', no: 'Нет' },
     sections: {
@@ -390,6 +396,9 @@ export const translations = {
       promoLimit: 'One user can use a maximum of 3 promo codes during that period.',
       copyPromo: 'Copy code',
       copiedPromo: 'Copied',
+      telegramReminder:
+        'To avoid missing updates and the app launch, subscribe to our Telegram channel.',
+      telegramButton: 'Subscribe to channel',
     },
     common: { yes: 'Yes', no: 'No' },
     sections: {
