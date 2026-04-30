@@ -1,7 +1,7 @@
 export const translations = {
   uz: {
     app: {
-      title: 'SalomatAI — Fikr so‘rovi',
+      title: 'SalomatAI — CustDev',
       subtitle:
         'Maqsadimiz: vazn boshqaruvi bo‘yicha real muammolarni tushunish va sizga mos yechim yaratish.',
       completedTitle: 'Rahmat! Javobingiz qabul qilindi',
